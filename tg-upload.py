@@ -1,6 +1,5 @@
 from pathlib import Path, PurePath
 from sys import version_info as py_ver
-from pkg_resources import get_distribution as get_dist
 from time import time
 from json import load as json_load
 from PIL import Image
@@ -11,18 +10,19 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.audio.io.AudioFileClip import AudioFileClip
 from math import floor
 
+import importlib.metadata
 import argparse
 import hashlib
 
 tg_upload = "1.1.5"
 versions = f"tg-upload: {tg_upload} \
 Python: {py_ver[0]}.{py_ver[1]}.{py_ver[2]} \
-Pyrogram: {get_dist('pyrogram').version} \
-Prettytable: {get_dist('prettytable').version} \
-Pillow: {get_dist('pillow').version} \
-httpx: {get_dist('httpx').version} \
-TgCrypto: {get_dist('tgcrypto').version} \
-moviepy {get_dist('moviepy').version} \
+Pyrogram: {importlib.metadata.version('pyrogram')} \
+Prettytable: {importlib.metadata.version('prettytable')} \
+Pillow: {importlib.metadata.version('Pillow')} \
+httpx: {importlib.metadata.version('httpx')} \
+TgCrypto: {importlib.metadata.version('tgcrypto')} \
+moviepy: {importlib.metadata.version('moviepy')} \
 "
 json_endpoint = "https://cdn.thecaduceus.eu.org/tg-upload/release.json"
 
