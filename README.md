@@ -69,6 +69,8 @@ For Termux:
 ```
 pkg install python -y
 pkg install git -y
+pkg install python-pillow -y
+pkg install python-numpy -y
 ```
 
 <a name="i-2"></a>
@@ -81,8 +83,6 @@ pkg install git -y
 ```
 git clone https://github.com/TheCaduceus/tg-upload.git
 ```
-
-> Starting from release [v1.0.1](https://github.com/TheCaduceus/tg-upload/releases/tag/v1.0.1), tg-upload no longer supports Termux due to the absence of some required dependencies. You may try an older [release](https://github.com/TheCaduceus/tg-upload/releases/tag/v1.0.0) to enjoy the basic functionalities offered by tg-upload. Hence, any issue related to Termux will be rejected without any further investigation.
 
 **3.Change Directory:**
 
