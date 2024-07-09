@@ -6,6 +6,7 @@ from PIL import Image
 from datetime import datetime
 from httpx import get as get_url
 from os import environ as env
+from dotenv import load_dotenv
 from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.audio.io.AudioFileClip import AudioFileClip
 from math import floor
@@ -13,6 +14,9 @@ from math import floor
 import importlib.metadata
 import argparse
 import hashlib
+
+#  Load environment variables from .env file
+load_dotenv()
 
 tg_upload = "1.1.5"
 versions = f"tg-upload: {tg_upload} \

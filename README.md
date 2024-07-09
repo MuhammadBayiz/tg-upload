@@ -252,7 +252,14 @@ Flags that do not fit in the above categories are listed in this category:
 
 ## 📝 ENV Variables
 
-**Tired of passing values each time using flags? Set flag values in system environment, each flag has its own unique system variable name from which it retrieves the value once detected. The table below shows the variable name, flag it is associated with, and the value it expects.**
+Tired of passing values each time using flags? Set flag values in system environment, each flag has its own unique system variable name from which it retrieves the value once detected. The table below shows the variable name, flag it is associated with, and the value it expects.
+
+**Important:** there's two ways to set environment variables. 
+1. setting up a **.env file**. 
+2. setting it in the **os level**.
+
+I recommend the first way, just create a **_.env_** file in the root directory of the script and set your variables as so:
+`VARIABLE=VALUE`
 
 |Variable                        |Flag                    |Value           |
 |:------------------------------:|:----------------------:|:--------------:|
