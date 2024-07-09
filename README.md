@@ -67,10 +67,7 @@ brew install python@3.11 git
 ```
 For Termux:
 ```
-pkg install python -y
-pkg install git -y
-pkg install python-pillow -y
-pkg install python-numpy -y
+pkg install python git python-pillow python-numpy -y
 ```
 
 <a name="i-2"></a>
@@ -81,7 +78,7 @@ pkg install python-numpy -y
 
 - Use Git:
 ```
-git clone https://github.com/TheCaduceus/tg-upload.git
+git clone https://github.com/MuhammadBayiz/tg-upload.git
 ```
 
 **3.Change Directory:**
@@ -258,8 +255,9 @@ Tired of passing values each time using flags? Set flag values in system environ
 1. setting up a **.env file**. 
 2. setting it in the **os level**.
 
-I recommend the first way, just create a **_.env_** file in the root directory of the script and set your variables as so:
-`VARIABLE=VALUE`
+I recommend the first way, just create a **_.env_** file in the root directory of the script and set each variables in new lines as so:
+`VARIABLE1=VALUE1`
+`VARIABLE2=VALUE2`
 
 |Variable                        |Flag                    |Value           |
 |:------------------------------:|:----------------------:|:--------------:|
